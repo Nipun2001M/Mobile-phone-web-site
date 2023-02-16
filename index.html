@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <div class="links">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Phone</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Cart</a></li>
+    
+                </ul>
+            </div>
+
+        </nav>
+        <div class="imformation">
+            ,<div class="overlay"></div>
+            <img src="images/mobile.png" class="mobile">
+            <div id="circle">
+                <div class="feature one"> <img src="images/camera.png"><div >
+                    <h1>Camera</h1>
+                    <p>12MP, Wide Angle</p>
+                </div>
+                </div>
+                <div class="feature two"> <img src="images/processor.png">
+                    <div >
+                        <h1>Processor</h1>
+                        <p>snapDragon octa-core 11nm</p>
+                    </div></div>
+                <div class="feature three"> <img src="images/display.png">
+                    <div >
+                        <h1>Display</h1>
+                        <p>6.5",mini Drop Full Screen</p>
+                    </div></div>
+                <div class="feature four"> <img src="images/battery.png">
+                    <div >
+                        <h1>Battery Life</h1>
+                        <p>5000mah, 720Hrs StandBy</p>
+                    </div></div>
+
+            </div>
+        </div>
+        <div class="controls">
+            <img src="images/arrow.png" id="upbtn">
+            <h3>Features</h3>
+            <img src="images/arrow.png " id="downbtn">
+        </div>
+    </div>
+    <script>
+        var circle=document.getElementById('circle');
+        var upbtn=document.getElementById('upbtn');
+        var downbtn=document.getElementById('downbtn');
+
+        var rotatevlue=circle.style.transform;
+        var rotatesum;
+
+        upbtn.onclick=function(){
+            rotatesum=rotatevlue+ "rotate(-90deg)";
+            circle.style.transform=rotatesum;
+            rotatevlue=rotatesum;
+        }
+        downbtn.onclick=function(){
+            rotatesum=rotatevlue+ "rotate(90deg)";
+            circle.style.transform=rotatesum;
+            rotatevlue=rotatesum;
+        }
+    </script>
+   
+
+    
+    
+
+    
+</body>
+</html>
